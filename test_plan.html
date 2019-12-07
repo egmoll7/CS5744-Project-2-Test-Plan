@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CS5744 - Project 2 - Pet Adoption and Medical Record System</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="">Pet Adoption and Medical Record System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Introduction</a>
+                <a class="nav-item nav-link active" href="test_plan.html">Test Plan</a>
+                <a class="nav-item nav-link" href="test_scope.html">Test Scope</a>
+                <a class="nav-item nav-link" href="validation_tests.html">Validation Tests</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="row mt-5">
+            <h3>Test Plan</h3>
+        </div>
+
+        <div class="row mt-3">
+            <p>Our integration plan and requirements for testing will be based on the access and usability
+                between the different types of users. The application should have certain functions that not
+                all users can access. It should also have the ability for users to make notes that Veterinarians
+                can view, and no other user can edit the Veterinarians notes, but the individual Veterinarian.
+                The application will allow many different types of users to interact with a database, each
+                authorized user has their own level of access restrictions.
+            </p>
+
+            <p>We believe that the best Plan Build and Test Plan for this system will be a Boehm’s Spiral Model.
+                The testing should be integrated at each prototype because the application is dealing with sensitive
+                information that needs to be securely validated. The system is intended to be used where it is not
+                essential for all of the intended end users to have access to all of the program operations and
+                information.
+                The system can be built for one set of users at a time. This will give the building team time to build
+                the
+                application for the Veterinarian user that does not have any restrictions. Then to create additional
+                user
+                restrictions as each prototype is developed.
+            </p>
+
+            <p>This will ensure that the most important type of users have access to the full performance of the
+                application.
+                Performing this type of testing, the builders can ensure that they are testing the different users level
+                access,
+                from the most important, Veterinarians, to the last phase of users, like Groomers and Travel Agencies.
+                Which is
+                why we believe that the Spiral Model of testing is the best for this application. Each phase will allow
+                for the
+                builders to ensure that the application is meeting the objectives of the phases intended clients,
+                addressing one
+                clients risks at a time and developing one clients platform at a time.
+            </p>
+        </div>
+
+        <figure class="text-center mt-3">
+            <img class="figure-img img-fluid" src="images/Figure-2.png" alt="Figure 2">
+            <figcaption class="figure-caption text-center">Figure 2. Integration Building Plan
+            </figcaption>
+        </figure>
+
+        <div class="row mt-3">
+            <h3>Application Deployment & Client</h3>
+        </div>
+
+        <div class="row mt-3">
+            <h4>Prototype Phases</h4>
+        </div>
+
+        <div class="row mt-3">
+            <p>The Test Procedure for this application is going to consist of 4 prototypes: building team will build the
+                prototypes for each specific type of user, gather information of the users interaction and performance
+                and
+                business integration. The users will be tested in isolation to ensure they have the correct interaction
+                with
+                the application and the testing scenarios.
+            </p>
+        </div>
+
+        <div class="row mt-3">
+            <h4>Prototype 1</h4>
+        </div>
+
+        <div class="row mt-3">
+            <p>For the first prototype, the builders should focus on the users with the least amount of application
+                restrictions.
+                So that the first set of test scenarios can focus on the performance of the application, minimizing the
+                applications
+                integrity risks. The test will be focus on User Interactions and Reusability.
+            </p>
+
+            <table class="table table-striped table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Phase</th>
+                        <th scope="col">Build</th>
+                        <th scope="col">Test</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Objective: Focus on the interaction the Veterinarian user type will have with the database.
+                        </td>
+                        <td>Testing that the application is useful to the intended user.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Risk: Builders risk at this point is to ensure that the information can be accessed and
+                            transferred easily between offices.</td>
+                        <td>Testing the ability of the application to be integrated across different platforms.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Develop: Creating a platform for the first intended users with no restrictions for the
+                            Veterinarian.</td>
+                        <td>Testing that the first prototype is running and all the basic functionality of the
+                            application is working
+                            properly.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Planning the next phase: Pet Owner.</td>
+                        <td>Testing that all the needs from the intended user are met. (UAT verification)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="row mt-3">
+            <h4>Prototype 2</h4>
+        </div>
+
+        <div class="row mt-3">
+            <p>In the second prototype, we are going to be testing the interaction between the Pet Owner and the
+                application.
+                This will include the first test scenarios of user restrictions focusing on performance. The test will
+                focus
+                on User Interaction and User Type Restrictions.
+            </p>
+
+            <table class="table table-striped table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Phase</th>
+                        <th scope="col">Build</th>
+                        <th scope="col">Test</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Objective: Create the first set of user restrictions for the Pet Owner and creating a Pet
+                            Owner
+                            Interaction Page.
+                        </td>
+                        <td>Testing that the application is useful to the Pet Owner and the application objectives meet
+                            the Pet Owner
+                            needs.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Risk: The Pet Owner has the ability to change any animal's medical record.</td>
+                        <td>Testing the restrictions are set properly.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Develop: The Pet Owners User Platform and Pet Owner restrictions to medical records.</td>
+                        <td>Testing the ability for different type of users. Prove that the user is a Veterinarian,
+                            giving to that user type
+                            the ability to change any medical records. Showing records to Pet Owners and giving them the
+                            ability to make
+                            separate notes.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Planning the next phase: Animal Shelters and Adoption Agencies.</td>
+                        <td>Testing that all the needs from the intended user are met. (UAT verification)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="row mt-3">
+            <h4>Prototype 3</h4>
+        </div>
+
+        <div class="row mt-3">
+            <p>In the third prototype, we are looking to test the availability of a platform for Animal Shelters and
+                Adoption Agencies. In this prototype we are going to focus on the availability of any previous medical
+                bills or previous Owners notes are available to future Owners and future Veterinarians. The test will
+                focus on User Interaction and User Type Restrictions.
+            </p>
+
+            <table class="table table-striped table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Phase</th>
+                        <th scope="col">Build</th>
+                        <th scope="col">Test</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Objective: Create a second set of user restrictions for Animal Shelters and Adoption
+                            Agencies.
+                        </td>
+                        <td>Testing that the application is useful to the Animal Shelter and Adoption Agencies and the
+                            application
+                            objectives meet the Animal Shelters and Adoption Agencies needs.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Risk: The ability for Adoption Agencies to change previous Owners or Veterinarians notes.
+                        </td>
+                        <td>Testing the restrictions are set properly.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Develop: The platform for Animal Shelter and Adoption Agencies.</td>
+                        <td>Testing that the existing Owners and Veterinarian notes can't be changed and giving them the
+                            ability to make
+                            separate notes.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Planning the next phase: Groomers and Travel Agencies</td>
+                        <td>Testing that all the needs from the intended user are met. (UAT verification)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="row mt-3">
+            <h4>Prototype 4</h4>
+        </div>
+
+        <div class="row mt-3">
+            <p>In the fourth and final prototype, we are not only going to do testing for restrictions on editing
+                information but on information access. The focus on this testing scenario is to ensure that the Travel
+                Agencies only see the pertinent medical information and Groomers can only see the pertinent Pet Owner
+                notes information.
+            </p>
+
+            <table class="table table-striped table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Phase</th>
+                        <th scope="col">Build</th>
+                        <th scope="col">Test</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Objective: Final set of restrictions, not all the notes and medical bills will be shown to
+                            the Groomers and Travel
+                            Agencies user types. Only the pertinent information will be available to the appropiate user
+                            types.
+                        </td>
+                        <td>Testing that the intended user objectives can be met while the user types have viewing
+                            access restrictions.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Risk: The ability for Groomers and Travel Agencies to access Owners notes and medical record
+                            information that they do not need.
+                        </td>
+                        <td>Testing the restrictions are set properly.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Develop: The final version of the application.</td>
+                        <td>Testing that all the access and editing information is fully developed and that the Groomers
+                            and Travel Agencies can see and
+                            edit what was previously set as objectives. (Final UAT verification)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <footer class="page-footer text-center font-small pt-5 pb-1 bg-dark dark text-white">
+        <p>Angela Farkas and Eduardo Moll</p>
+    </footer>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

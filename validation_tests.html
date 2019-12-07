@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CS5744 - Project 2 - Pet Adoption and Medical Record System</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="">Pet Adoption and Medical Record System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Introduction</a>
+                <a class="nav-item nav-link" href="test_plan.html">Test Plan</a>
+                <a class="nav-item nav-link" href="test_scope.html">Test Scope</a>
+                <a class="nav-item nav-link active" href="validation_tests.html">Validation Tests</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="row mt-5">
+            <h3>Validation Tests</h3>
+        </div>
+
+        <div class="row mt-3">
+            <p>The application is going to be validated against the requirements that were included in our test plan.
+                The goal of the validation testing is to ensure that the application actually meets the user’s needs and
+                satisfy the specified business requirements. In other words, this process will validate that the
+                application is user ready for a production deployment. The validation testing is going to be broken into
+                five functional areas outlined in the table below, we also included a new column to identify the user
+                type that meets the individual requirements for that function in specific.
+            </p>
+
+            <table class="table table-striped table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Functionality</th>
+                        <th scope="col">Purpose</th>
+                        <th scope="col">User Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">User Account Management</th>
+                        <td>Create and manage user account data</td>
+                        <td>Veterinarian, Pet Owner, Groomer, Travel Agency, Animal Shelter and Adoption Agency</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Pet Medical Record</th>
+                        <td>Create or modify medical records of pets in the system.</td>
+                        <td>Veterinarian</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Pet Interaction Page</th>
+                        <td>Create, update or modify non-medical information of the pets.</td>
+                        <td>Pet Owner</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Pet for Adoption Catalog</th>
+                        <td>Manage the information of any pet living in the center.</td>
+                        <td>Animal Shelter and Adoption Agency</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Limited Pet Profile</th>
+                        <td>View necessary owner notes and medical record information.</td>
+                        <td>Groomers and Travel Agencies</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row mt-3">
+            <p>We believe that the best Validation Tests for this system will be using the Black Box Testing Concept.
+                This type of testing will allow us to test the behavior of the application for the desired functionality
+                without focusing on the actual software internal structure. The test cases will be based on the analysis
+                of the specifications, functional and non-functional requirements set by the Design Team. The desired
+                outcome of this testing is to make sure that the end users will be able to use the application without
+                issues and identify possible issues that user may encounter to fix them on time.
+            </p>
+        </div>
+
+        <figure class="text-center mt-3">
+            <img class="figure-img img-fluid" src="images/Figure-3.png" alt="Figure 3">
+            <figcaption class="figure-caption text-center">Figure 3. Black Box Testing Concept</figcaption>
+        </figure>
+
+        <div class="row mt-3">
+            <h4>Test Cases</h4>
+        </div>
+
+        <div class="row mt-3">
+            <p>The Validation Tests for this application is going to consists of verifying the relationship between the
+                logical input called causes with corresponding actions that will be called effect. The test cases will
+                follow the steps of identifying the procedure (cause) and the outcome (effect).</p>
+        </div>
+
+        <div class="row mt-3">
+            <h4>User Account Management</h4>
+
+            <table class="table table-striped table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Test Number</th>
+                        <th scope="col">Purpose</th>
+                        <th scope="col">Procedure</th>
+                        <th scope="col">Outcome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1.1</th>
+                        <td>Create a new Personal Account</td>
+                        <td>Input email, username, password and personal information</td>
+                        <td>The account is succesfully created</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1.2</th>
+                        <td>Request access to create a new Business Account</td>
+                        <td>Fill out the application with the business information</td>
+                        <td>The application is approved and the account is succesfully created</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1.3</th>
+                        <td>Account login</td>
+                        <td>Enter username and password</td>
+                        <td>The user is able to login into the system</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1.4</th>
+                        <td>Business Account - Create additional accounts for employees</td>
+                        <td>Input the employee information</td>
+                        <td>The employee account is succesfully created</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1.5</th>
+                        <td>Business Account - Manage the roles of the employees accounts</td>
+                        <td>View the employees account list and select an account to change the role</td>
+                        <td>The user is able to update the role for some or all the employee accounts</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1.6</th>
+                        <td>Business Account - Delete employee account</td>
+                        <td>Visit the employee account profile and select the delete option</td>
+                        <td>The employee account is deleted and can't login again into the system</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1.7</th>
+                        <td>Update profile information</td>
+                        <td>Visit the account profile and make changes to one or more fields</td>
+                        <td>The profile is updated with the new information</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row mt-3">
+            <h4>Pet Medical Record</h4>
+
+            <table class="table table-striped table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Test Number</th>
+                        <th scope="col">Purpose</th>
+                        <th scope="col">Procedure</th>
+                        <th scope="col">Outcome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">2.1</th>
+                        <td>Create a new pet medical record</td>
+                        <td>Input the pet information</td>
+                        <td>The pet medical record is succesfully created</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2.2</th>
+                        <td>Update a pet medical record</td>
+                        <td>Enter new diagnosis from recent appointment</td>
+                        <td>The diagnosis is now available in the pet medical record</td>
+                    <tr>
+                        <th scope="row">2.3</th>
+                        <td>Create a new appointment</td>
+                        <td>Fill out the information for a new appointment with the pet owner</td>
+                        <td>The pet medical record is updated with the new appointment</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2.4</th>
+                        <td>Search for a pet medical record</td>
+                        <td>Input a specific pet name</td>
+                        <td>A pet medical record matching the search criteria will be displayed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2.5</th>
+                        <td>Generate list of upcoming appointments</td>
+                        <td>Visit the appointments list and select a particular date</td>
+                        <td>The user is able to see the list with all the upcoming appointments</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2.6</th>
+                        <td>Notification incomplete information on pet medical record</td>
+                        <td>Input the missing information</td>
+                        <td>The pet medical record is succesfully updated</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2.7</th>
+                        <td>Update ownership of the pet</td>
+                        <td>Visit the pet medical record and change the pet owner field with a new Personal Account</td>
+                        <td>The pet medical record is updated with the new information</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row mt-3">
+            <h4>Pet Interaction Page</h4>
+
+            <table class="table table-striped table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Test Number</th>
+                        <th scope="col">Purpose</th>
+                        <th scope="col">Procedure</th>
+                        <th scope="col">Outcome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">3.1</th>
+                        <td>View a pet profile</td>
+                        <td>View the pet profile with all the information available</td>
+                        <td>The user is able to see the information</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3.2</th>
+                        <td>Update a pet profile</td>
+                        <td>Visit the pet profile and change one or more fields</td>
+                        <td>The pet profile is updated with the new information</td>
+                    <tr>
+                        <th scope="row">3.3</th>
+                        <td>Upload supporting documents</td>
+                        <td>Visit the pet profile and upload document</td>
+                        <td>The document is now available in the pet profile</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3.4</th>
+                        <td>View list of upcoming medical appointments</td>
+                        <td>Visit the medical appointments list</td>
+                        <td>The user is able to see the list with all the upcoming medical appointments</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3.5</th>
+                        <td>Notification upcoming medical appointment</td>
+                        <td>Notification displayed in the page</td>
+                        <td>The user is able to see the information related to the upcoming medical appointment</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3.6</th>
+                        <td>Export a pet record</td>
+                        <td>Visit the pet profile and select the export option</td>
+                        <td>The user is able to generate a PDF with all the information available of their pets</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3.7</th>
+                        <td>Update ownership of the pet</td>
+                        <td>Visit the pet profile and change the pet owner field with a new Personal Account</td>
+                        <td>The pet profile is updated with the new information</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3.8</th>
+                        <td>Share contact information</td>
+                        <td>Visit the pet profile and choose option to share contact</td>
+                        <td>The user is able to opt in/out to share their contact information</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3.9</th>
+                        <td>Notification incomplete information on the pet profile</td>
+                        <td>Input the missig information</td>
+                        <td>The pet profile is succesfully updated</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row mt-3">
+            <h4>Pet for Adoption Catalog</h4>
+
+            <table class="table table-striped table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Test Number</th>
+                        <th scope="col">Purpose</th>
+                        <th scope="col">Procedure</th>
+                        <th scope="col">Outcome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">4.1</th>
+                        <td>Search for a animal record</td>
+                        <td>Input a specific animal name</td>
+                        <td>The record matching the search criteria will be displayed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4.2</th>
+                        <td>View an animal record</td>
+                        <td>View the animal record with all the information available</td>
+                        <td>The user is able to see the information</td>
+                    <tr>
+                        <th scope="row">4.3</th>
+                        <td>View list of animal records</td>
+                        <td>Visit the adoption catalog</td>
+                        <td>The user is able to see all the animals currently living in the center</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4.4</th>
+                        <td>Update an animal record</td>
+                        <td>Visit the animal record and change one or more fields</td>
+                        <td>The animal record is updated with the new information</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4.5</th>
+                        <td>Update ownership of the pet</td>
+                        <td>Visit the pet profile and change the pet owner field with a new Personal Account</td>
+                        <td>The pet profile is updated with the new information</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row mt-3">
+            <h4>Limited Pet Profile</h4>
+
+            <table class="table table-striped table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Test Number</th>
+                        <th scope="col">Purpose</th>
+                        <th scope="col">Procedure</th>
+                        <th scope="col">Outcome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">5.1</th>
+                        <td>Search for a pet profile</td>
+                        <td>Input a specific pet name</td>
+                        <td>The pet profile matching the search criteria will be displayed</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5.2</th>
+                        <td>View a pet profile</td>
+                        <td>View the pet profile with the limited information specific for the user type</td>
+                        <td>The user is able to see the information</td>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row mt-3">
+            <h4>Traceable Matrix</h4>
+        </div>
+
+        <div class="row mt-3">
+            <p>Within the previous test cases we have included references to a number of the functional requirements.
+                Some of the requirements where pin to a single component of the system. The following requirements
+                traceability matrix should provide a quick reference for the relationship between the test cases for the
+                Validation section and the system components.
+            </p>
+
+            <table class="table table-striped table-bordered">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Number</th>
+                        <th scope="col">Requirement</th>
+                        <th scope="col">Test Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">FR-1</th>
+                        <td>Pet Owners (Personal Users) may self-register for an account.
+                        </td>
+                        <td>1.1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FR-2a</th>
+                        <td>Veterinarian Office may request Business Accounts.</td>
+                        <td>1.2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FR-2b</th>
+                        <td>Adoption Clinic Owners/Administrators may request Business Accounts.</td>
+                        <td>1.2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FR-3</th>
+                        <td>Business Users may create additional accounts for employees.</td>
+                        <td>1.4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FR-4</th>
+                        <td>Business Users may manage roles/permissions for employee accounts.</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FR-5</th>
+                        <td>All users may login to the system using a unique username and password.</td>
+                        <td>1.3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FR-6</th>
+                        <td>Veterinarians and employees may create or modify medical records for pets in the system.
+                        </td>
+                        <td>2.1,2.2,2.3,2.4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FR-7</th>
+                        <td>Personal Users may upload supporting documentation for their pets (e.g. scanned or
+                            electronic copies of medical services).</td>
+                        <td>3.3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FR-8</th>
+                        <td>Personal Users may update/modify non-medical information of the pets.</td>
+                        <td>3.1,3.2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FR-9</th>
+                        <td>Any user pass ownership of an owned pet to any other user.</td>
+                        <td>2.7,3.7,4.5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FR-10</th>
+                        <td>Personal Users may opt in/out sharing contact information to the owners if pet is passed.
+                        </td>
+                        <td>3.8</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FR-11a</th>
+                        <td>System should notify Veterinarian of missing or incomplete medical or personal information.
+                        </td>
+                        <td>2.6</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FR-11b</th>
+                        <td>System should notify Pet Owners of missing or incomplete medical or personal information.
+                        </td>
+                        <td>3.9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <footer class="page-footer text-center font-small pt-5 pb-1 bg-dark dark text-white">
+        <p>Angela Farkas and Eduardo Moll</p>
+    </footer>
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
